@@ -1,0 +1,7 @@
+
+
+$(function() {
+    $('.btn-next').click(function() {
+        return confirm('Are you sure? You cant modify the fields later!!!'); 
+    });
+});

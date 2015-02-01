@@ -1,0 +1,145 @@
+.nav a {
+    //width:800px;  
+    color: #5a5a5a;
+    font: 'Helvetica neue',sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+.nav li {
+    font-family: 'Sirin Stencil', cursive;
+    display: inline;
+}
+
+.jumbotron {
+    padding-bottom: 0px;
+    background-image:url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/t1.0-9/p526x296/148871_295983500555436_120090408_n.jpg');
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 600px;
+    margin:auto;
+}
+
+.jumbotron .container {
+    position: relative;
+    top:100px;
+}
+
+.jumbotron h1 {
+    color: #000000;
+    font-size: 48px;  
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.learn-more {
+    background-color: #f7f7f7;
+}
+.team {
+    background-color: #f7f7f7;
+}
+
+
+.learn-more{
+
+    background-color: #E3E3E3;
+}
+
+.learn-more h3 {
+    font-family: 'Shift', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.learn-more p{
+
+    font-size:17px; 
+}
+
+.learn-more a {
+    color: #00b0ff;
+}
+
+.neighborhood-guides{
+    background-color:#ADB3B3;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 15px;
+}
+
+.neighborhood-guides h2 {
+    color:#393c3d;
+    font-size:24px;
+}
+
+.neighborhood-guides p {
+    font-size:15px;
+    margin-bottom:13px;
+}
+.well{
+    padding-bottom: 10px;
+    background-color:#E3E3E3;
+    // margin-bottom: 10px;
+}
+.wellimg {
+    margin-left: 990px;
+
+}
+
+.team h1{
+    // margin-left: 330px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Contrail One', cursive;
+    alignment-adjust: central;
+}
+
+.name {
+
+    font-size: 30px;
+
+    margin-top: 30px;
+    font-family: 'Piedra', cursive;
+
+}
+
+.text {
+    margin-top: 30px;
+    font-family: 'Damion', cursive;
+    font-size: 30px;
+    line-height: 110%;
+
+}
+
+.icon{
+
+    margin-top: 10px;
+
+
+}
+
+.introcvgen h2{
+    //margin-left: 260px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-family: 'Contrail One', cursive;
+    alignment-adjust: central;
+}
+
+.introcvgen p{
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid graytext;
+    padding-bottom: 15px;
+    font-family: 'Damion', cursive;
+    line-height: 110%;
+    font-size: 30px;
+}
+

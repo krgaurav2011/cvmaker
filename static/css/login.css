@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 Jul, 2014, 1:01:05 AM
+    Author     : gaurav
+*/
+
+.page-left{
+
+    margin: 30px 0px 30px 30px;
+
+    padding-left: 30px;
+}
+.page-right{
+    margin: 30px 70px;
+    border-left: 2px solid #F5F5DC;
+    padding-left: 50px;
+}
+.header{
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.btn{
+    margin: 20px 100px;
+}
+input[type="text"], input[type="password"]{
+    background-color: #F5F5DC;
+    border: 2px solid #CCC;
+    border-radius: 6px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.frm{
+    border-top: 2px solid #F5F5DC;
+    padding-top: 40px;
+}
+.frm,.header{
+    padding-left: 54px;
+
+}
+.forgot-password{
+    padding-left: 130px;
+}
+.logo-right{
+    
+   float: right;
+}
+.well-left{
+    height: 70px;
+    width: 100px;
+    
+}

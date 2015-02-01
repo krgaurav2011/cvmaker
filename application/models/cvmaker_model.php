@@ -1,0 +1,125 @@
+<?php 
+class cvmaker_model extends CI_Model
+{
+   
+    function insert_basic_information($user_id,$first_name,$middle_name,$last_name,$email,$phone_number,$date_of_birth,$objective)
+    {   
+      
+        $sql="insert into basic_information (user_id,first_name,middle_name,last_name,email,phone_number,dob,objective) values('$user_id','$first_name','$middle_name','$last_name','$email','$phone_number' ,'$date_of_birth','$objective')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+    function insert_users($email,$password)
+    {
+        $sql = "insert into users(email,password) values('$email','$password')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+    function check_users($email,$password)
+    {
+        $sql = "select * from users where email='$email' and password='$password'";
+        $query = $this->db->query($sql);
+        return $query;
+    }
+    function insert_qualification($user_id,$name_10, $school_10, $year_of_passing_10,$performance_scale_10, $percentage_10,$name_12, $school_12, $year_of_passing_12,$performance_scale_12, $percentage_12,$institute,$university,$department,$degree,$year_of_passing,$performance_scale,$percentage) {
+        
+        $sql = "insert into qualification(user_id,class_10_exam,class_10_school,class_10_year,scale_10,class_10_percentage,class_12_exam,class_12_school,class_12_year,scale_12,class_12_percentage,department,degree,institute,university,scale,percentage,year_of_passing) values ('$user_id','$name_10','$school_10','$year_of_passing_10','$performance_scale_10','$percentage_10','$name_12','$school_12','$year_of_passing_12','$performance_scale_12','$percentage_12','$department','$degree','$institute','$university','$performance_scale','$percentage','$year_of_passing')";
+
+        $out = $this->db->query($sql);
+        return $out;
+    }    
+	function insert_project_details($user_id, $name,$organisation, $place, $duration,$details)
+    {
+		$sql=" insert into projects(user_id, name,organisation,place,duration,details) values ('$user_id','$name','$organisation','$place','$duration','$details')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+        
+        
+    function insert_intern_details($id, $name, $organisation, $place, $duration)
+	{
+    	$sql=" insert into internships(user_id, name, organisation, place, duration) values ('$id','$name','$organisation','$place','$duration')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+        
+    function insert_work_details($id, $status, $organisation, $place, $position, $duration)
+	{
+        $sql=" insert into work_experience(user_id, status, organisation, place, position,duration) values ('$id','$status','$organisation','$place','$position','$duration')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+    function insert_new_skill($skill,$category,$authorised)
+    {
+        
+        $sql="insert into skills_list(skills,category,authorised) values('$skill','$category','$authorised')";
+        $out=$this->db->query($sql);
+        return $out;
+        
+    }
+     
+    
+    function insert_skills_rated($user_id,$skill_id,$value)
+    {
+        $sql="insert into user_skills_rated(user_id,skill_id,skills_rating) values('$user_id','$skill_id','$value')";
+        $out=$this->db->query($sql);
+        return $out;
+        
+    }
+    function insert_skills_nonrated($user_id,$skill_id)
+    {
+        $sql="insert into user_skills_nonrated(user_id,skill_id) values ('$user_id','$skill_id')";
+        $out=$this->db->query($sql);
+        return $out;
+        
+    }
+    function insert_interest($user_id,$interest)    
+	{
+            
+    	$sql="insert into interest(user_id,interests) values ('$user_id','$interest')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+        
+    function insert_achievements($user_id, $achievements) 
+	{
+            
+        $sql="insert into achievement(user_id,achievements) values ('$user_id','$achievements')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+        
+    function insert_positions_of_responsibility($user_id, $position_of_responsibility) 
+	{
+            
+    	$sql="insert into position_of_responsibility(user_id,position) values ('$user_id','$position_of_responsibility')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+        
+    function insert_reference($user_id, $reference_by, $email, $contact, $institute, $position,$on_request)
+    {
+            
+        $sql="insert into reference(user_id,reference_by,email,contact,institute,position,on_request)"
+                    . " values ('$user_id','$reference_by','$email','$contact','$institute','$position','$on_request')";
+        $out=$this->db->query($sql);
+        return $out;
+    }
+    function extract_basic_information($user_id)
+    {
+        $sql="select * from basic_information where user_id=\"$user_id\"";
+        $query=$this->db->query($sql);
+        $result=$query->result();
+        return $result;
+    }
+      
+    function insert_completed($id) {
+        
+        $sql="UPDATE users SET completed=1 WHERE id='$id'";
+        $this->db->query($sql);
+    }
+    
+    
+}
+
+?>

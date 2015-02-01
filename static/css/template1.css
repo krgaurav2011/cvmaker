@@ -1,0 +1,22 @@
+body
+{
+   font-family: helvettica;
+}
+h2
+{
+  background:#e0e0e0;
+    position:relative;
+    top:-10px;
+}
+.info
+{   
+    position:relative;
+    top:-25px;
+    padding-bottom:0;
+  
+}
+.section
+{
+    postion:relative;
+    top:-30px;
+}
